@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, CreateDrone } from './components';
+import { Home, CreateDrone, Drones } from './components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav } from 'react-bootstrap';
 import logo from './assets/img/Coding-Drones-Logo.png';
@@ -41,7 +41,7 @@ render(
 
         <Nav.Item>
           <Nav.Link>
-            <Link to='/create'> Create a Drone </Link>
+            <Link to='/drones'> Display Your Drones </Link>
           </Nav.Link>
         </Nav.Item>
 
@@ -52,10 +52,13 @@ render(
 
       <Switch>
         <Route exact path="/">
-          <Home title="Coding Drones" />
+          <Home title="Coding Drones" age={31}  />
         </Route>
         <Route path="/create">
           <CreateDrone />
+        </Route>
+        <Route path="/drones">
+          <Drones />
         </Route>
       </Switch>
 

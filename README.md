@@ -1,3 +1,20 @@
+# Day 2 Of React - Fetching Data
+Here we have explored how to access data from an api (using our own API).
+We also discussed how to save and access state/stateful variables using React's Hooks
+Lastly, we created server calls and our own custom hook to display our data
+into the Drone Component.
+
+- Topics:
+    - React Hooks
+        - useState
+        - useEffect
+    - Creating Hooks
+    - Data Fetching (using the `fetch()` function)
+    - Displaying Data inside of a component
+    - Styling our Data using React-Bootstrap
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
