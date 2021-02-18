@@ -10,6 +10,10 @@
 
 # production
 /build
+.firebaserc
+firebase.json
+drone-members
+hosting.*
 
 # misc
 .DS_Store
