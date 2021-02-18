@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { Home, CreateDrone, Drones } from './components';
+import { Home, CreateDrone, Drones, UpdateDrone } from './components';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Navbar, Nav } from 'react-bootstrap';
 import logo from './assets/img/Coding-Drones-Logo.png';
@@ -59,6 +59,9 @@ render(
         </Route>
         <Route path="/drones">
           <Drones />
+        </Route>
+        <Route path = '/update'>
+          <UpdateDrone />
         </Route>
       </Switch>
 
